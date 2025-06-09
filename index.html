@@ -357,6 +357,9 @@
         {id:6,label:'Retrieval',region:'Frontal ↔ Hippocampus',img:'https://cdn.flintrehab.com/uploads/2021/01/cerebral-cortex-damage.png'}
       ];
       wrap.innerHTML=`<h2 class="text-blue-700 text-3xl font-bold mb-8 text-center">How a New Memory Forms</h2>`;
+
+      wrap.insertAdjacentHTML('beforeend', `<p class="text-blue-800 mb-8 text-center max-w-prose mx-auto">Memories begin with sensory input, which our brain initially processes in areas dedicated to sight, sound, and touch. Attention acts like a filter, selecting what moves forward into working memory. From there, information must be encoded — a process handled by the hippocampus — to create lasting changes in the brain's neural networks. Over time, these memories are stored across different regions of the cerebral cortex. Successful retrieval involves reactivating these neural pathways, with the hippocampus and frontal lobe coordinating recall.</p>`);
+
       const container=document.createElement('div'); container.className='flex flex-col gap-6 items-center'; wrap.appendChild(container);
       steps.forEach((s,i)=>{
         container.insertAdjacentHTML('beforeend',`<div class="w-72 bg-blue-50 rounded-2xl shadow p-4 flex flex-col items-center text-center fade-enter">
